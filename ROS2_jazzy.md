@@ -81,10 +81,10 @@ sudo update-alternatives --config x-terminal-emulator
 **完了！！**
 
 ### ターミネーターの主なショートカットキー
-• 水平分割: Ctrl + Shift + O
-• 垂直分割: Ctrl + Shift + E
-• ペイン移動: Alt + 矢印キー (上下左右)
-• 現在のペインを閉じる: Ctrl + Shift + W
+- 水平分割: Ctrl + Shift + O
+- 垂直分割: Ctrl + Shift + E
+- ペイン移動: Alt + 矢印キー (上下左右)
+- 現在のペインを閉じる: Ctrl + Shift + W
 
 # ROS2のインストール確認
 - ROS2で有名なもので、turtleノードがあります。試そう！！（ターミネーター推奨）
