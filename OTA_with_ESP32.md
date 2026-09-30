@@ -112,12 +112,10 @@ const int LED_PIN = 2; // 例: 内蔵LEDピン
 void setup() {
   Serial.begin(115200);
 
-  // ----------------------------------------------------
-  // 【追加】自分の処理の初期設定
-  // ----------------------------------------------------
+  // ① ピン設定などの一瞬で終わる初期化
   pinMode(LED_PIN, OUTPUT);
 
-  // --- ここから下のWi-Fi・OTA設定は残す ---
+  // ② Wi-Fi接続（最初に繋ぐ。変更しない）
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
 
@@ -130,9 +128,12 @@ void setup() {
   Serial.print("IP Address: ");
   Serial.println(WiFi.localIP());
 
+  // ③ OTAの開始
   ArduinoOTA.setHostname("esp32-home-device");
   ArduinoOTA.begin();
   Serial.println("OTA Ready");
+
+  // ④ 時間のかかる初期化処理や for ループはここで行う
 }
 
 void loop() {
