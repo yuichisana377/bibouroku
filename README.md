@@ -6,4 +6,4 @@
 ## 更新履歴
 - 2026/9/24 [windows11とubuntu24.04のデュアルブート](Dual-Boot-with-Windows_11-and-Ubuntu_24.04.md)
 - 2026/9/29 [ROS2 jazzyのインストールと、インストールの確認。ターミネーターのインストール](ROS2_jazzy.md)
-- 2026/9/30 [EPS32のOTAのやり方](OTA_with_ESP32.md)
+- 2026/9/30 [ESP32のOTAのやり方](OTA_with_ESP32.md)
